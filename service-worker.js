@@ -3,6 +3,10 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
+  '/data.js',
+  'App.js',
+  'index.css',
+  'index.js',
   // You might want to add icons and other static assets here i
   '/icons/apple-touch-icon.png',
   '/icons/favicon-32x32.png',
