@@ -156,7 +156,7 @@ const App = () => {
                 <p className="text-base text-gray-800 mb-4 font-medium">{q.question}</p>
                 {q.comment && (
                   <div className="p-3 mb-4 text-sm text-gray-600 bg-gray-50 rounded-lg border border-gray-100">
-                    <p className="font-semibold">{language === 'en' ? 'Comment:' : 'Commentaire:'}</p>
+                    <p className="font-semibold">{language === 'en' ? 'Comment' : 'Commentaire'}</p>
                     <p>{q.comment}</p>
                   </div>
                 )}
