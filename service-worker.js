@@ -1,60 +1,89 @@
-const CACHE_NAME = 'data-collector-v2';
-const urlsToCache = [
+const CACHE_NAME = 'ifm-quoting-app-v1';
+const CACHE_ASSETS = [
   '/',
   '/index.html',
   '/styles.css',
   '/app.js',
-  '/data.js',
   '/manifest.json',
-  '/data.js',
-  'App.js',
-  'index.css',
-  'index.js',
-  // You might want to add icons and other static assets here i
-  '/icons/apple-touch-icon.png',
-  '/icons/favicon-32x32.png',
-  '/icons/favicon-16x16.png',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  '/icon-192x192.png',
+  '/icon-512x512.png',
+  'https://cdn.tailwindcss.com',
+  'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
+  'https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3bDk9To53s.woff2',
+  'https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js',
+  'https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js',
+  'https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js'
 ];
 
+// Install event: caches all the necessary files
 self.addEventListener('install', (event) => {
-  // Perform installation steps
+  console.log('Service Worker: Installed');
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then((cache) => {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
+      .then(cache => {
+        console.log('Service Worker: Caching files');
+        return cache.addAll(CACHE_ASSETS);
       })
-      .catch(err => console.error('Failed to cache files:', err))
+      .then(() => self.skipWaiting())
   );
 });
 
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      })
-      .catch(err => console.error('Fetch failed:', err))
-  );
-});
-
+// Activate event: cleans up old caches
 self.addEventListener('activate', (event) => {
-  const cacheWhitelist = [CACHE_NAME];
+  console.log('Service Worker: Activated');
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
+    caches.keys().then(cacheNames => {
       return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
+        cacheNames.map(cache => {
+          if (cache !== CACHE_NAME) {
+            console.log('Service Worker: Clearing old cache');
+            return caches.delete(cache);
           }
         })
       );
-    })
+    }).then(() => self.clients.claim())
+  );
+});
+
+// Fetch event: serves cached files first, then fetches from the network
+self.addEventListener('fetch', (event) => {
+  // We only want to intercept GET requests for resources we might want to cache
+  if (event.request.method !== 'GET') {
+    return;
+  }
+
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        // If the resource is in the cache, serve it
+        if (response) {
+          console.log(`Service Worker: Serving from cache for ${event.request.url}`);
+          return response;
+        }
+
+        // If not, fetch from the network
+        return fetch(event.request)
+          .then(res => {
+            // Check if we received a valid response
+            if (!res || res.status !== 200 || res.type !== 'basic') {
+              return res;
+            }
+
+            // Clone the response because it's a stream and can only be consumed once
+            const resToCache = res.clone();
+
+            caches.open(CACHE_NAME)
+              .then(cache => {
+                cache.put(event.request, resToCache);
+              });
+
+            return res;
+          })
+          .catch(err => {
+            console.error('Fetch failed:', err);
+            // You can provide a fallback page here for complete offline experience
+            // return caches.match('/offline.html');
+          });
+      })
   );
 });

@@ -1,27 +1,27 @@
 {
-  "name": "Data Collection PWA",
-  "short_name": "Data Collector",
-  "start_url": ".",
+  "name": "IFM Quoting App",
+  "short_name": "IFM Quotes",
+  "description": "An application for creating and managing quotes for Industrial Facility Management services.",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2563EB",
-  "description": "A PWA for collecting data based on predefined questionnaires.",
-  "lang": "en-US",
+  "background_color": "#f3f4f6",
+  "theme_color": "#1e40af",
   "icons": [
     {
-      "src": "/icons/icon-192x192.png",
+      "src": "/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "src": "/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/icons/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
+      "src": "/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

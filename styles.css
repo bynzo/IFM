@@ -1,13 +1,47 @@
-/* Custom font import from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
 }
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+.container {
+  max-width: 100%;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 600px; /* Constrain width on larger screens */
+  }
+}
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+.modal-content {
+  max-height: 90vh; /* Limit modal height */
+  overflow-y: auto; /* Enable scrolling for long content */
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Adjust calendar icon color for dark backgrounds if needed */
+}
+/* Custom scrollbar for modals */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
