@@ -6,7 +6,11 @@ const urlsToCache = [
   '/app.js',
   '/data.js',
   '/manifest.json',
-  // You might want to add icons and other static assets here
+  '/data.js',
+  'App.js',
+  'index.css',
+  'index.js',
+  // You might want to add icons and other static assets here i
   '/icons/apple-touch-icon.png',
   '/icons/favicon-32x32.png',
   '/icons/favicon-16x16.png',

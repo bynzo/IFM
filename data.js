@@ -8,25 +8,33 @@ const data = {
       {
         question: 'Scopes of work any current service levels descriptions (contracts, writeups) performing the tasks. ',
         comment: null,
+        question: 'Scopes of work any current service levels descriptions (contracts, writeups) performing the tasks. ',
+        comment: null,
       },
       {
         question: 'Baseline spend per service line complete with back up information e.g. financial detailed reports broken down to details, individual PO\'s and billing (invoice copies) with work descriptions, work order histories (with work descriptions and service tickets for the past 12 months',
         comment: null,
+        comment: null,
       },
       {
+        question: 'Assets for the area (with information on the asset if possible, location, description size, model, serial number, install date, criticality, spare parts information, ',
+        comment: null,
         question: 'Assets for the area (with information on the asset if possible, location, description size, model, serial number, install date, criticality, spare parts information, ',
         comment: null,
       },
       {
         question: 'Time spent by the Client team both in supervision and administration of this service line (percentage or hours)',
         comment: null,
+        comment: null,
       },
       {
         question: 'Actual Client labor and materials performing the tasks. Complete with back-up documentation (timesheets, work order information) complete with parts used',
         comment: null,
+        comment: null,
       },
       {
         question: 'Actual Contractor Labor and Materials performing the tasks complete with back up information (POS, billing c/w work description and price breakdown)',
+        comment: null,
         comment: null,
       },
       {
@@ -51,6 +59,7 @@ const data = {
       },
       {
         question: 'Organization Chart of the site for FM services subcontracted including number of employees and total hours worked per month (For any on site delivery of controllable service, i.e. Janitorial, Security as an example)',
+        comment: null,
         comment: null,
       },
       {
@@ -154,41 +163,53 @@ const data = {
       {
         question: 'Are there any in-progress projects ongoing? Clarification required for who will complete these.',
         comment: 'If so we would need to undrstand number, scale and volume of these projects. Is there an exisiting supplier in place that will complete these projects or will there be a clean break.',
+        comment: 'If so we would need to undrstand number, scale and volume of these projects. Is there an exisiting supplier in place that will complete these projects or will there be a clean break.',
       },
       {
         question: 'Is there a requirement for scientific & clinical services?',
         comment: 'If so, detailed list of equipment to be obtained.',
+        comment: 'If so, detailed list of equipment to be obtained.',
       },
       {
+        question: 'Describe CURRENT MAINTENANCE ORGANIZATION (# of service supervisors; # of FTE / PTE;  shifts; working hours, reporting line…).',
+        comment: null,
         question: 'Describe CURRENT MAINTENANCE ORGANIZATION (# of service supervisors; # of FTE / PTE;  shifts; working hours, reporting line…).',
         comment: null,
       },
       {
         question: 'Is there a call out process? Standby allowance  ?',
         comment: 'If so, please state the number of staff on call outside normal hours weekdays. If so, please state the number of staff on call during weekend.',
+        question: 'Is there a call out process? Standby allowance  ?',
+        comment: 'If so, please state the number of staff on call outside normal hours weekdays. If so, please state the number of staff on call during weekend.',
       },
       {
         question: 'Are there any specific qualifications required to work on site?',
+        comment: '(Security Check, Safety Training, Security Training, GMP etc)',
         comment: '(Security Check, Safety Training, Security Training, GMP etc)',
       },
       {
         question: 'Are there any IT systems and/or CAFM / CMMS systems on site that currently manage maintenance, help desk calls and finance?',
         comment: 'Planned Maintenance: Help Desk Calls: Reactive Maintenance: Finance:',
+        comment: 'Planned Maintenance: Help Desk Calls: Reactive Maintenance: Finance:',
       },
       {
         question: 'CLIENT EXPECTATIONS: Are there any best practices you like with your current contractor? Are there any improvements that could be made?',
+        comment: null,
         comment: null,
       },
       {
         question: 'CLIENT EXPECTATIONS: To the Clients knowledge; are there any gaps in the current service provision in terms skills, capabilities and competencies?',
         comment: null,
+        comment: null,
       },
       {
         question: 'Is there currently an automated energy management system in place?',
         comment: null,
+        comment: null,
       },
       {
         question: 'Is there a Energy Management System\' (ISO 50001 / ISO 14001 / ISO 18001 / ISO 9001) in place?',
+        comment: null,
         comment: null,
       },
     ],
@@ -220,6 +241,7 @@ const data = {
       {
         question: 'What impact do the CONDITION OF THE BUIlDING and KITCHEN (i.e. floors, walls, fittings, stairs) have on food production and distribution?',
         comment: '□ Good □ Medium □Bad',
+        comment: '□ Good □ Medium □Bad',
       },
       {
         question: 'FOOD STORAGE AREA: Is there a central store or are stores decentralized? Are the storages easy to access and well equipped (electricity plugs; shelves; etc.)? If the storage is central, are-there lifts that allow easy transportation of equipment?',
@@ -227,6 +249,7 @@ const data = {
       },
       {
         question: 'Provide the average breakdown of food sold (fresh, semi prepared, packed, …) / types of menu (number of choices, starters, desserts, …) or diets (allergens, vegetatian, ….)/ free issues',
+        comment: null,
         comment: null,
       },
       {
@@ -552,6 +575,8 @@ const data = {
       {
         question: 'STORAGE / SECURITY • Are there suitable storage locations for the equipment? • If so, are they secure?',
         comment: '1) [ ] YES [ ] NO 2) [ ] YES [ ] NO',
+        question: 'STORAGE / SECURITY • Are there suitable storage locations for the equipment? • If so, are they secure?',
+        comment: '1) [ ] YES [ ] NO 2) [ ] YES [ ] NO',
       },
       {
         question: 'RISK ASSESSMENT • Are there specific risks - Slopes, water, working at height, risk of falls, dangerous trees, snow removal, fitness trail? SPECIFICITY OF THE SITE • Specificities of the site, i.e. flood zone, extreme cold, snow...?',
@@ -568,9 +593,11 @@ const data = {
       {
         question: 'WASTE • How is green waste managed on the site?',
         comment: '- Are there any restrictions on the quantities of green waste or effluent discharges?',
+        comment: '- Are there any restrictions on the quantities of green waste or effluent discharges?',
       },
       {
         question: 'INDOOR GREEN SPACES • Subcontracted or owned? • Contract available? • Who owns the plants and containers? • Are there schedules for houseplant care? • Type of plants / maintenance frequency',
+        comment: '- Description of indoor plants - Number of plants',
         comment: '- Description of indoor plants - Number of plants',
       },
       {
@@ -584,9 +611,11 @@ const data = {
       {
         question: 'Indicate the number of days per week that the green space service must be provided (5, 6 or 7)',
         comment: null,
+        comment: null,
       },
       {
         question: 'Describe the current organization. (Number of team leaders, number of agents, number of hours worked, etc.).',
+        comment: null,
         comment: null,
       },
       {
@@ -802,17 +831,24 @@ const data = {
       {
         question: 'Quels sont les environnements/équipements les plus critiques aux yeux des clients ?',
         comment: null,
+        question: 'Quels sont les environnements/équipements les plus critiques aux yeux des clients ?',
+        comment: null,
       },
       {
+        question: 'Le bâtiment est-il classé ?',
+        comment: null,
         question: 'Le bâtiment est-il classé ?',
         comment: null,
       },
       {
         question: 'Année de construction ? Dernier grand refit ?',
         comment: null,
+        question: 'Année de construction ? Dernier grand refit ?',
+        comment: null,
       },
       {
         question: 'Informations générales sur la construction : Charpente / Toit / Planchers / Murs...',
+        comment: 'Veuillez fournir une brève description des matériaux, de l’état, des volumes... et l’état général du bâtiment',
         comment: 'Veuillez fournir une brève description des matériaux, de l’état, des volumes... et l’état général du bâtiment',
       },
       {
@@ -822,12 +858,17 @@ const data = {
       {
         question: 'Nombre de locaux techniques et d’actifs individuels de grande taille',
         comment: 'Veuillez fournir une brève description - numéro et état général - ont-ils l’air propres (poussière, empreintes de pas, odeurs ?, ventilation suffisante ?)',
+        comment: 'Veuillez fournir une brève description - numéro et état général - ont-ils l’air propres (poussière, empreintes de pas, odeurs ?, ventilation suffisante ?)',
       },
       {
         question: 'Dans le cas où il y a de grandes distances à parcourir : y a-t-il besoin d’un VÉHICULE ? Si oui, le client en a-t-il un ou doit-il être fourni par Equans ?',
         comment: '□ OUI □NON Si oui, précisez :',
+        question: 'Dans le cas où il y a de grandes distances à parcourir : y a-t-il besoin d’un VÉHICULE ? Si oui, le client en a-t-il un ou doit-il être fourni par Equans ?',
+        comment: '□ OUI □NON Si oui, précisez :',
       },
       {
+        question: 'ZONE DE STOCKAGE DES PIÈCES : Y a-t-il un magasin central ou les magasins sont-ils décentralisés ? Les rangements sont-ils faciles d’accès et bien équipés (prises électriques, étagères, etc.) ? Si le stockage est central, y a-t-il des ascenseurs qui permettent le transport facile de l’équipement ?',
+        comment: '□ OUI □NON Si oui, précisez :',
         question: 'ZONE DE STOCKAGE DES PIÈCES : Y a-t-il un magasin central ou les magasins sont-ils décentralisés ? Les rangements sont-ils faciles d’accès et bien équipés (prises électriques, étagères, etc.) ? Si le stockage est central, y a-t-il des ascenseurs qui permettent le transport facile de l’équipement ?',
         comment: '□ OUI □NON Si oui, précisez :',
       },
@@ -858,32 +899,48 @@ const data = {
       {
         question: 'Y a-t-il un besoin pour des services scientifiques et cliniques ?',
         comment: 'Si oui, liste détaillée des équipements à obtenir.',
+        question: 'Y a-t-il un besoin pour des services scientifiques et cliniques ?',
+        comment: 'Si oui, liste détaillée des équipements à obtenir.',
       },
       {
+        question: 'Décrire l’ORGANISATION ACTUELLE DE LA MAINTENANCE (# de superviseurs de service ; # d’ETP / PTE ; Changements; heures de travail, ligne de rapport...).',
+        comment: null,
         question: 'Décrire l’ORGANISATION ACTUELLE DE LA MAINTENANCE (# de superviseurs de service ; # d’ETP / PTE ; Changements; heures de travail, ligne de rapport...).',
         comment: null,
       },
       {
         question: 'Y a-t-il un processus d’appel ? Indemnité de disponibilité ?',
         comment: 'Si c’est le cas, veuillez indiquer le nombre d’employés sur appel en dehors des heures normales de travail. Si oui, veuillez indiquer le nombre d’employés disponibles pendant le week-end.',
+        question: 'Y a-t-il un processus d’appel ? Indemnité de disponibilité ?',
+        comment: 'Si c’est le cas, veuillez indiquer le nombre d’employés sur appel en dehors des heures normales de travail. Si oui, veuillez indiquer le nombre d’employés disponibles pendant le week-end.',
       },
       {
+        question: 'Y a-t-il des qualifications spécifiques requises pour travailler sur site ?',
+        comment: '(Contrôle de sécurité, formation à la sûreté, formation à la sécurité, GMP, etc.)',
         question: 'Y a-t-il des qualifications spécifiques requises pour travailler sur site ?',
         comment: '(Contrôle de sécurité, formation à la sûreté, formation à la sécurité, GMP, etc.)',
       },
       {
         question: 'Y a-t-il des systèmes informatiques et/ou des systèmes CAFM / GMAO sur site qui gèrent actuellement la maintenance, les appels au service d’assistance et les finances ?',
         comment: 'Maintenance planifiée : Appels au service d’assistance : Maintenance réactive : Finance:',
+        question: 'Y a-t-il des systèmes informatiques et/ou des systèmes CAFM / GMAO sur site qui gèrent actuellement la maintenance, les appels au service d’assistance et les finances ?',
+        comment: 'Maintenance planifiée : Appels au service d’assistance : Maintenance réactive : Finance:',
       },
       {
+        question: 'ATTENTES DU CLIENT : Y a-t-il des pratiques exemplaires que vous aimez avec votre entrepreneur actuel ? Y a-t-il des améliorations qui pourraient être apportées ?',
+        comment: null,
         question: 'ATTENTES DU CLIENT : Y a-t-il des pratiques exemplaires que vous aimez avec votre entrepreneur actuel ? Y a-t-il des améliorations qui pourraient être apportées ?',
         comment: null,
       },
       {
         question: 'ATTENTES DU CLIENT : À la connaissance du Client ; Y a-t-il des lacunes dans l’offre actuelle de services en termes d’aptitudes, d’aptitudes et de compétences ?',
         comment: null,
+        question: 'ATTENTES DU CLIENT : À la connaissance du Client ; Y a-t-il des lacunes dans l’offre actuelle de services en termes d’aptitudes, d’aptitudes et de compétences ?',
+        comment: null,
       },
       {
+        question: 'Existe-t-il actuellement un système automatisé de gestion de l’énergie ?',
+        comment: null,
         question: 'Existe-t-il actuellement un système automatisé de gestion de l’énergie ?',
         comment: null,
       },
@@ -920,8 +977,12 @@ const data = {
       {
         question: 'Quel est l’impact de l’état de la cuisine et de la cuisine (sols, murs, installations, escaliers) sur la production et la distribution des aliments ?',
         comment: '□ Bien □ Moyen □ Mauvais',
+        question: 'Quel est l’impact de l’état de la cuisine et de la cuisine (sols, murs, installations, escaliers) sur la production et la distribution des aliments ?',
+        comment: '□ Bien □ Moyen □ Mauvais',
       },
       {
+        question: 'ZONE DE STOCKAGE DES ALIMENTS : •Y a-t-il un magasin central ou les magasins sont-ils décentralisés ? •Les rangements sont-ils faciles d’accès et bien équipés (prises électriques, étagères, etc.) ? •Si le stockage est central, y a-t-il des ascenseurs qui permettent le transport facile de l’équipement ?',
+        comment: '□ Bien □ Moyen □ Mauvais',
         question: 'ZONE DE STOCKAGE DES ALIMENTS : •Y a-t-il un magasin central ou les magasins sont-ils décentralisés ? •Les rangements sont-ils faciles d’accès et bien équipés (prises électriques, étagères, etc.) ? •Si le stockage est central, y a-t-il des ascenseurs qui permettent le transport facile de l’équipement ?',
         comment: '□ Bien □ Moyen □ Mauvais',
       },
@@ -948,16 +1009,36 @@ const data = {
       {
         question: 'ATTENTES DU CLIENT : Y a-t-il des pratiques exemplaires que vous aimez avec votre entrepreneur actuel ? Y a-t-il des améliorations qui pourraient être apportées ?',
         comment: null,
+        question: 'ATTENTES DU CLIENT : Y a-t-il des pratiques exemplaires que vous aimez avec votre entrepreneur actuel ? Y a-t-il des améliorations qui pourraient être apportées ?',
+        comment: null,
       },
       {
         question: 'Selon vous, quel est le NIVEAU DE SERVICE / STANDARD attendu par le client ?',
         comment: '□ Bien □ Moyen □ Mauvais',
+        question: 'Selon vous, quel est le NIVEAU DE SERVICE / STANDARD attendu par le client ?',
+        comment: '□ Bien □ Moyen □ Mauvais',
       },
       {
-        question: 'Y a-t-il des SYSTÈMES informatiques utilisés sur place pour gérer les services de restauration ? Si oui, précisez le type de systèmes et s’ils appartiennent au Client ou au Fournisseur actuel.',
-        comment: null,
+        question: 'Y a-t-il des SYSTÈMES informatiques utilisés sur place pour gérer les services de restauration? Si oui, précisez le type de systèmes et s’ils appartiennent au Client ou au Fournisseur actuel.',
+        comment: null
+      }
+    ],
+    'cleaning-mat-replacement': [
+      {
+        question: 'DISTRIBUTEUR: • Fournisseur en place ?',
+        comment: 'Adresse si elle est indiquée sur l’étiquette Numéro de téléphone',
       },
       {
+        question: 'Plan du site',
+        comment: null
+      },
+      {
+        question: 'Superficie nettoyable',
+        comment: null
+      },
+      {
+        question: 'DISTRIBUTEUR: • Fournisseur en place ?',
+        comment: 'Adresse si elle est indiquée sur l’étiquette Numéro de téléphone',
         question: 'DISTRIBUTEUR: • Fournisseur en place ?',
         comment: 'Adresse si elle est indiquée sur l’étiquette Numéro de téléphone',
       },
@@ -1054,8 +1135,12 @@ const data = {
       {
         question: 'Aux yeux du client, quel est le BIEN ou MATERIEL avec le PLUS GROS RISQUE ?',
         comment: null,
+        question: 'Aux yeux du client, quel est le BIEN ou MATERIEL avec le PLUS GROS RISQUE ?',
+        comment: null,
       },
       {
+        question: 'Selon vous, quelle est la PRINCIPALE FONCTION DE L\'EQUIPE DE SECURITE ? (Contrôle des accès, service aux occupants, moyen de dissuasion, Santé & Sécurité) ?',
+        comment: null,
         question: 'Selon vous, quelle est la PRINCIPALE FONCTION DE L\'EQUIPE DE SECURITE ? (Contrôle des accès, service aux occupants, moyen de dissuasion, Santé & Sécurité) ?',
         comment: null,
       },
@@ -1066,8 +1151,12 @@ const data = {
       {
         question: 'Y a-t-il des ZONES A HAUT RISQUE / Est-ce un site de maîtrise des dangers liés aux accidents majeurs ?',
         comment: '□ Substances dangereuses □ Process sensibles □ Autres',
+        question: 'Y a-t-il des ZONES A HAUT RISQUE / Est-ce un site de maîtrise des dangers liés aux accidents majeurs ?',
+        comment: '□ Substances dangereuses □ Process sensibles □ Autres',
       },
       {
+        question: 'Le périmètre du site est-il OUVERT OU FERME / CLOTURE ?',
+        comment: '□ Ouvert □ Fermé ',
         question: 'Le périmètre du site est-il OUVERT OU FERME / CLOTURE ?',
         comment: '□ Ouvert □ Fermé ',
       },
@@ -1142,8 +1231,11 @@ const data = {
       {
         question: 'NOMBRE D\'INTERVENTIONS : Indiquer le nombre de JOURS PAR SEMAINE où les services devront être réalisés (par exemple 5, 6 ou 7)',
         comment: null,
+        comment: null,
       },
       {
+        question: 'Décrire l\'ORGANISATION EN PLACE (Organigramme & Structure du Management) ',
+        comment: null,
         question: 'Décrire l\'ORGANISATION EN PLACE (Organigramme & Structure du Management) ',
         comment: null,
       },
@@ -1154,8 +1246,11 @@ const data = {
       {
         question: 'Confirmez le NOMBRE et la DUREE des rondes (par exemple, 8 ou 12h)',
         comment: '□ Jour : □ Nuit : □ Week-end : □ Autre :',
+        comment: '□ Jour : □ Nuit : □ Week-end : □ Autre :',
       },
       {
+        question: 'Y a-t-il des PRIMES SPECIFIQUES pour l\'équipe de sécurité?',
+        comment: null,
         question: 'Y a-t-il des PRIMES SPECIFIQUES pour l\'équipe de sécurité?',
         comment: null,
       },
@@ -1236,6 +1331,7 @@ const data = {
       {
         question: 'Précisez la surface totale à entretenir (m²) • Prenez si possible un ensemble de clichés du site actuel et demandez si le client est actuellement satisfait.',
         comment: '- Planning annuel des prestations - Plan du site détaillant les zones à traiter (incluant les quantités si possible)',
+        comment: '- Planning annuel des prestations - Plan du site détaillant les zones à traiter (incluant les quantités si possible)',
       },
       {
         question: 'ACCES • La taille des machines utilisées est-elle limitée compte tenu des accès ?',
@@ -1243,6 +1339,7 @@ const data = {
       },
       {
         question: 'HORAIRES D\'INTERVENTION • Précisez les jours et heures possibles d\'intervention',
+        comment: null,
         comment: null,
       },
       {
@@ -1268,8 +1365,12 @@ const data = {
       {
         question: 'DECHETS • Comment sont gérés les déchets verts sur le site ?',
         comment: '- Existe-t-il des restrictions sur les quantités de déchets verts ou rejets d\'effluents ?',
+        question: 'DECHETS • Comment sont gérés les déchets verts sur le site ?',
+        comment: '- Existe-t-il des restrictions sur les quantités de déchets verts ou rejets d\'effluents ?',
       },
       {
+        question: 'ESPACES VERTS INTERIEURS • Sous-traité ou en propre ? • Contrat disponible ? • Qui est propriétaire des plantes et des bacs ? • Y\'a-t-il des horaires pour l\'entretien des plantes d\'intérieur ? • Type de plantes / fréquence d\'entretien',
+        comment: '- Description des plantes intérieures - Nombre de plantes',
         question: 'ESPACES VERTS INTERIEURS • Sous-traité ou en propre ? • Contrat disponible ? • Qui est propriétaire des plantes et des bacs ? • Y\'a-t-il des horaires pour l\'entretien des plantes d\'intérieur ? • Type de plantes / fréquence d\'entretien',
         comment: '- Description des plantes intérieures - Nombre de plantes',
       },
