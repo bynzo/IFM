@@ -1,7 +1,10 @@
-const CACHE_NAME = 'data-collector-v1';
+const CACHE_NAME = 'data-collector-v2';
 const urlsToCache = [
   '/',
   '/index.html',
+  '/styles.css',
+  '/app.js',
+  '/data.js',
   '/manifest.json',
   // You might want to add icons and other static assets here
   '/icons/apple-touch-icon.png',
