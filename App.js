@@ -82,3 +82,26 @@ const serviceModal = document.getElementById('serviceModal');
 const serviceModalTitle = document.getElementById('serviceModalTitle');
 const serviceForm = document.getElementById('serviceForm');
 const serviceTypeSelect = document.getElementById('serviceType');
+
+
+// --- NEW CODE START ---
+
+// Event listeners for the Project modal
+addProjectBtn.addEventListener('click', () => {
+    projectModal.classList.remove('hidden');
+    projectModal.classList.add('flex');
+});
+
+cancelProjectBtn.addEventListener('click', () => {
+    projectModal.classList.add('hidden');
+    projectModal.classList.remove('flex');
+});
+
+projectModal.addEventListener('click', (event) => {
+    if (event.target === projectModal) {
+        projectModal.classList.add('hidden');
+        projectModal.classList.remove('flex');
+    }
+});
+
+// --- NEW CODE END ---
